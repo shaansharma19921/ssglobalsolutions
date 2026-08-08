@@ -406,6 +406,58 @@ img{ max-width:100%; display:block; }
   text-align:center;
 }
 
+/* ---------- Director message ---------- */
+.director-card{
+  background:linear-gradient(135deg, #08316b, var(--navy) 65%, var(--sky) 150%);
+  border-radius:24px;
+  padding:56px;
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+.director-card::after{
+  content:"";
+  position:absolute; left:-70px; bottom:-70px;
+  width:240px;height:240px;border-radius:50%;
+  background:rgba(245,166,35,0.12);
+}
+@media (max-width:768px){ .director-card{ padding:34px 24px; } }
+.director-card .quote-mark{
+  font-family:var(--font-display);
+  font-size:4rem;
+  line-height:1;
+  color:var(--amber);
+  opacity:0.9;
+  margin-bottom:6px;
+}
+.director-card p{
+  color:rgba(255,255,255,0.9);
+  font-size:1.02rem;
+  margin-bottom:16px;
+}
+.director-card .signature{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-top:28px;
+  padding-top:24px;
+  border-top:1px solid rgba(255,255,255,0.18);
+}
+.director-card .signature .avatar{
+  width:56px;height:56px;border-radius:50%;
+  background:rgba(255,255,255,0.12);
+  border:1px solid rgba(255,255,255,0.3);
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-family:var(--font-display);font-weight:700;font-size:1.1rem;
+  flex-shrink:0;
+}
+.director-card .signature strong{
+  display:block; font-family:var(--font-display); font-size:1.05rem; color:#fff;
+}
+.director-card .signature span{
+  font-size:0.85rem; color:rgba(255,255,255,0.7);
+}
+
 /* ---------- CTA band ---------- */
 .cta-band{
   background:linear-gradient(120deg, var(--navy), var(--sky));
